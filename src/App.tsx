@@ -33,23 +33,23 @@ export default function App() {
       </Canvas>
 
       {currentSection === "projects" && !isExploring && (
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
-          <h1 className="text-5xl font-bold mb-8 max-w-4xl mx-auto font-manrope">
-            Sustainable Solutions for a
-            <br />
-            Web3 World
-          </h1>
-          <h2 className="text-xl mb-10">
-            Empowering businesses with eco-friendly blockchain technology
-          </h2>
-          <button
-            onClick={() => setIsExploring(true)}
-            className="bg-green-500 text-white font-bold py-3 px-6 rounded-md hover:bg-green-600 transition duration-300"
-          >
-            Explore Our Solutions
-          </button>
-        </div>
-      )}
+  <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+    <h1 className="text-5xl font-bold mb-8 max-w-4xl mx-auto font-manrope">
+      Eco-Friendly Blockchain
+      <br />
+      for a Greener Tomorrow
+    </h1>
+    <h2 className="text-xl mb-10">
+      Sustainable Web3 solutions with minimal environmental impact
+    </h2>
+    <button
+      onClick={() => setIsExploring(true)}
+      className="bg-green-500 text-white font-bold py-3 px-6 rounded-md hover:bg-green-600 transition duration-300"
+    >
+      Explore Our Solutions
+    </button>
+  </div>
+)}
 
       {isExploring && (
         <button
